@@ -1,0 +1,21 @@
+package net.orgiu.flatfootsample;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+
+import net.orgiu.flatfootsample.viewmodel.ViewModelActivity;
+
+public class FlatFootActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_flat_foot);
+    }
+
+    public void onViewModelRequested(View v) {
+        startActivity(new Intent(this, ViewModelActivity.class));
+    }
+}
