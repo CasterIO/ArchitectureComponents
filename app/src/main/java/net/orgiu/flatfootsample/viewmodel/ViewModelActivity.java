@@ -8,6 +8,7 @@ import android.widget.TextView;
 import net.orgiu.flatfootsample.R;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class ViewModelActivity extends AppCompatActivity {
@@ -24,6 +25,7 @@ public class ViewModelActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_model);
+        ButterKnife.bind(this);
         setUpToolbar();
 
         i = 0;
