@@ -34,6 +34,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="net.orgiu.flatfootsample.FlatFootActivity" />
         </activity>
+        <activity
+            android:name=".vm_livedata.ViewModelLiveDataActivity"
+            android:label="@string/title_activity_view_model_live_data"
+            android:parentActivityName=".FlatFootActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.orgiu.flatfootsample.FlatFootActivity" />
+        </activity>
     </application>
 
 </manifest>

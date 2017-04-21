@@ -9,15 +9,22 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/viewmodel"
+        android:text="@string/title_activity_view_model"
         style="@style/Widget.AppCompat.Button.Colored"
         android:onClick="onViewModelRequested"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/livedata"
+        android:text="@string/title_activity_live_data"
         style="@style/Widget.AppCompat.Button.Colored"
         android:onClick="onLiveDataRequested"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_view_model_live_data"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:onClick="onViewModelLiveDataRequested"/>
 
 </LinearLayout>
