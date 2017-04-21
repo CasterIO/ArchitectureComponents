@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import net.orgiu.flatfootsample.livedata.LiveDataActivity;
 import net.orgiu.flatfootsample.viewmodel.ViewModelActivity;
 
 public class FlatFootActivity extends AppCompatActivity {
@@ -17,5 +18,9 @@ public class FlatFootActivity extends AppCompatActivity {
 
     public void onViewModelRequested(View v) {
         startActivity(new Intent(this, ViewModelActivity.class));
+    }
+
+    public void onLiveDataRequested(View v) {
+        startActivity(new Intent(this, LiveDataActivity.class));
     }
 }
