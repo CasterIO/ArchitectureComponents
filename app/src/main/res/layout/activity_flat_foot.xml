@@ -27,4 +27,11 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:onClick="onViewModelLiveDataRequested"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_lifecycle_observing"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:onClick="onLifecycleObservingActivityRequested"/>
+
 </LinearLayout>

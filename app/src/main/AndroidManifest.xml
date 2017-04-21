@@ -43,6 +43,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="net.orgiu.flatfootsample.FlatFootActivity" />
         </activity>
+        <activity
+            android:name=".lifecycle.LifecycleObservingActivity"
+            android:label="@string/title_activity_lifecycle_observing"
+            android:parentActivityName=".FlatFootActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.orgiu.flatfootsample.FlatFootActivity" />
+        </activity>
     </application>
 
 </manifest>
