@@ -56,7 +56,7 @@ public class RoomActivity extends AppCompatActivity {
     }
 
     private String stringify(AndroidVersion version) {
-        return String.format(Locale.getDefault(), "Android %1$s [%2$s] - API %3$s", version.id, version.releaseName, version.apiLevel);
+        return String.format(Locale.getDefault(), "Android %1$s\t[%2$s]\tAPI %3$s\n", version.id, version.releaseName, version.apiLevel);
     }
 
 }

@@ -34,4 +34,11 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:onClick="onLifecycleObservingActivityRequested"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_room"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:onClick="onRoomActivityRequested"/>
+
 </LinearLayout>

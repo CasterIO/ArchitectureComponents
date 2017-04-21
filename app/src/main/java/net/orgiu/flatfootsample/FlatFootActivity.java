@@ -7,6 +7,7 @@ import android.view.View;
 
 import net.orgiu.flatfootsample.lifecycle.LifecycleObservingActivity;
 import net.orgiu.flatfootsample.livedata.LiveDataActivity;
+import net.orgiu.flatfootsample.room.RoomActivity;
 import net.orgiu.flatfootsample.viewmodel.ViewModelActivity;
 import net.orgiu.flatfootsample.vm_livedata.ViewModelLiveDataActivity;
 
@@ -32,5 +33,9 @@ public class FlatFootActivity extends AppCompatActivity {
 
     public void onLifecycleObservingActivityRequested(View v) {
         startActivity(new Intent(this, LifecycleObservingActivity.class));
+    }
+
+    public void onRoomActivityRequested(View v) {
+        startActivity(new Intent(this, RoomActivity.class));
     }
 }
