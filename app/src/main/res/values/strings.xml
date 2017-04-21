@@ -2,4 +2,5 @@
     <string name="app_name">Flatfoot Sample</string>
     <string name="title_activity_view_model">ViewModel</string>
     <string name="viewmodel">ViewModel</string>
+    <string name="title_activity_live_data">LiveData</string>
 </resources>
