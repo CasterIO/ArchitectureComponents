@@ -1,9 +1,11 @@
 package net.orgiu.flatfootsample.viewmodel;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
+import android.widget.Toolbar;
+
+import com.android.support.lifecycle.LifecycleActivity;
+import com.android.support.lifecycle.ViewModelStore;
 
 import net.orgiu.flatfootsample.R;
 
@@ -11,7 +13,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class ViewModelActivity extends AppCompatActivity {
+public class ViewModelActivity extends LifecycleActivity {
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
@@ -19,7 +21,7 @@ public class ViewModelActivity extends AppCompatActivity {
     @BindView(R.id.counter)
     TextView counter;
 
-    private int i;
+    private CounterViewModel counterVM;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,18 +30,19 @@ public class ViewModelActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         setUpToolbar();
 
-        i = 0;
-        updateCounterValue(i);
+        counterVM = ViewModelStore.get(this, CounterViewModel.class);
+        updateCounterValue(counterVM.getCounter());
     }
 
     private void setUpToolbar() {
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setActionBar(toolbar);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @OnClick(R.id.fab)
     public void onPlusOneClicked() {
-        updateCounterValue(i++);
+        counterVM.increaseCounter();
+        updateCounterValue(counterVM.getCounter());
     }
 
     private void updateCounterValue(int value) {
