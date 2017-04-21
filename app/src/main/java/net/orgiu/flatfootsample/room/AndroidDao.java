@@ -1,12 +1,14 @@
 package net.orgiu.flatfootsample.room;
 
 
+import com.android.support.room.Dao;
 import com.android.support.room.Insert;
 import com.android.support.room.OnConflictStrategy;
 import com.android.support.room.Query;
 
 import java.util.List;
 
+@Dao
 public interface AndroidDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

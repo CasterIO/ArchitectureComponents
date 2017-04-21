@@ -11,6 +11,8 @@ public class Dataset {
         version.id = id;
         version.apiLevel = apiLevel;
         version.releaseName = releaseName;
+
+        db.androidDao().insertAndroidVersion(version);
     }
 
     public static void populateWithTestData(AndroidDatabase db) {

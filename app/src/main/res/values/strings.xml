@@ -4,4 +4,5 @@
     <string name="title_activity_live_data">LiveData</string>
     <string name="title_activity_view_model_live_data">ViewModel + LiveData</string>
     <string name="title_activity_lifecycle_observing">Lifecycle</string>
+    <string name="title_activity_room">Room</string>
 </resources>
