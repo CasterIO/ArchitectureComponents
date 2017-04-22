@@ -1,6 +1,6 @@
 package net.orgiu.flatfootsample.viewmodel;
 
-import com.android.support.lifecycle.ViewModel;
+import android.arch.lifecycle.ViewModel;
 
 
 public class CounterViewModel extends ViewModel{

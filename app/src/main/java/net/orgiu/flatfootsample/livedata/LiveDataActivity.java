@@ -1,21 +1,20 @@
 package net.orgiu.flatfootsample.livedata;
 
+import android.arch.lifecycle.Observer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
-import com.android.support.lifecycle.LiveData;
-import com.android.support.lifecycle.Observer;
-
 import net.orgiu.flatfootsample.R;
+import net.orgiu.flatfootsample.common.BaseActivity;
+import net.orgiu.flatfootsample.common.CounterLiveData;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class LiveDataActivity extends AppCompatActivity {
+public class LiveDataActivity extends BaseActivity {
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
@@ -23,7 +22,7 @@ public class LiveDataActivity extends AppCompatActivity {
     @BindView(R.id.counter)
     TextView counter;
 
-    LiveData<Integer> counterLD = new LiveData<>();
+    CounterLiveData counterLD = CounterLiveData.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,13 +47,11 @@ public class LiveDataActivity extends AppCompatActivity {
             }
         };
 
-        counterLD.observe(observer);
-        counterLD.setValue(0);
+        counterLD.observe(this, observer);
     }
 
     @OnClick(R.id.fab)
     public void onPlusOneClicked() {
-        Integer currentValue = counterLD.getValue();
-        counterLD.setValue(currentValue +1);
+        counterLD.increaseCounter();
     }
 }

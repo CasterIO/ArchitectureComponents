@@ -1,21 +1,21 @@
 package net.orgiu.flatfootsample.lifecycle;
 
 
+import android.arch.lifecycle.LifecycleOwner;
 import android.util.Log;
 
-import com.android.support.lifecycle.Lifecycle;
-import com.android.support.lifecycle.LifecycleObserver;
-import com.android.support.lifecycle.LifecycleProvider;
-import com.android.support.lifecycle.OnLifecycleEvent;
+import android.arch.lifecycle.Lifecycle;
+import android.arch.lifecycle.LifecycleObserver;
+import android.arch.lifecycle.OnLifecycleEvent;
 
 public class SimpleLifecycleObserver implements LifecycleObserver {
     private static final String TAG = SimpleLifecycleObserver.class.getSimpleName();
 
-    public static SimpleLifecycleObserver bindInto(LifecycleProvider provider) {
+    public static SimpleLifecycleObserver bindInto(LifecycleOwner provider) {
         return new SimpleLifecycleObserver(provider);
     }
 
-    private SimpleLifecycleObserver(LifecycleProvider provider) {
+    private SimpleLifecycleObserver(LifecycleOwner provider) {
         provider.getLifecycle().addObserver(this);
     }
 

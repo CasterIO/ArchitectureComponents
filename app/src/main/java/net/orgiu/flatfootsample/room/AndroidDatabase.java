@@ -3,11 +3,11 @@ package net.orgiu.flatfootsample.room;
 
 import android.content.Context;
 
-import com.android.support.room.Database;
-import com.android.support.room.Room;
-import com.android.support.room.RoomDatabase;
+import android.arch.persistence.room.Database;
+import android.arch.persistence.room.Room;
+import android.arch.persistence.room.RoomDatabase;
 
-@Database(entities = {AndroidVersion.class})
+@Database(entities = {AndroidVersion.class}, version=1)
 public abstract class AndroidDatabase extends RoomDatabase {
 
     private static AndroidDatabase INSTANCE;

@@ -1,11 +1,12 @@
 package net.orgiu.flatfootsample.viewmodel;
 
+import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
-import com.android.support.lifecycle.LifecycleActivity;
-import com.android.support.lifecycle.ViewModelStore;
+import android.arch.lifecycle.LifecycleActivity;
+import android.arch.lifecycle.ViewModelStore;
 
 import net.orgiu.flatfootsample.R;
 
@@ -30,7 +31,7 @@ public class ViewModelActivity extends LifecycleActivity {
         ButterKnife.bind(this);
         setUpToolbar();
 
-        counterVM = ViewModelStore.get(this, CounterViewModel.class);
+        counterVM = ViewModelProviders.of(this).get(CounterViewModel.class);
         updateCounterValue(counterVM.getCounter());
     }
 

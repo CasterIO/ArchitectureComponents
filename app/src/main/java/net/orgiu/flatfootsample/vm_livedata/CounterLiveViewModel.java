@@ -1,31 +1,21 @@
 package net.orgiu.flatfootsample.vm_livedata;
 
-import com.android.support.lifecycle.LiveData;
-import com.android.support.lifecycle.ViewModel;
+import android.arch.lifecycle.LiveData;
+import android.arch.lifecycle.ViewModel;
+
+import net.orgiu.flatfootsample.common.CounterLiveData;
 
 
-public class CounterLiveViewModel extends ViewModel{
+public class CounterLiveViewModel extends ViewModel {
 
-    private final LiveData<Integer> counter = new LiveData<>();
+    private final CounterLiveData counter = CounterLiveData.getInstance();
 
     public LiveData<Integer> getCounter() {
-        if(counter.getValue() == null) {
-            counter.setValue(0);
-        }
 
         return counter;
     }
 
     public void increaseCounter() {
-        counter.setValue(safelyIncreaseCurrentValue());
-    }
-
-    private Integer safelyIncreaseCurrentValue() {
-        Integer currentValue = counter.getValue();
-        if (currentValue == null) {
-            currentValue = 0;
-        }
-
-        return currentValue + 1;
+        counter.increaseCounter();
     }
 }

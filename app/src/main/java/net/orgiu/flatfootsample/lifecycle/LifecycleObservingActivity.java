@@ -3,7 +3,7 @@ package net.orgiu.flatfootsample.lifecycle;
 import android.os.Bundle;
 import android.widget.Toolbar;
 
-import com.android.support.lifecycle.LifecycleActivity;
+import android.arch.lifecycle.LifecycleActivity;
 
 import net.orgiu.flatfootsample.R;
 
