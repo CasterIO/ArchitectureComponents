@@ -22,7 +22,7 @@ public class LiveDataActivity extends BaseActivity {
     @BindView(R.id.counter)
     TextView counter;
 
-    CounterLiveData counterLD = CounterLiveData.getInstance();
+    CounterLiveData counterLD = new CounterLiveData();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

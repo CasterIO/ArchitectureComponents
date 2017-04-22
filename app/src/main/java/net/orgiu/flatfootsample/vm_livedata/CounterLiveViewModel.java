@@ -8,7 +8,7 @@ import net.orgiu.flatfootsample.common.CounterLiveData;
 
 public class CounterLiveViewModel extends ViewModel {
 
-    private final CounterLiveData counter = CounterLiveData.getInstance();
+    private final CounterLiveData counter = new CounterLiveData();
 
     public LiveData<Integer> getCounter() {
 

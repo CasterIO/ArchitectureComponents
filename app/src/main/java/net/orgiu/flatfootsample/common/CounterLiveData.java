@@ -4,18 +4,8 @@ import android.arch.lifecycle.LiveData;
 
 
 public class CounterLiveData extends LiveData<Integer>{
-    private static CounterLiveData instance;
 
-    public static CounterLiveData getInstance() {
-        if (instance == null) {
-            instance = new CounterLiveData();
-        }
-
-        return instance;
-    }
-
-
-    private CounterLiveData() {
+    public CounterLiveData() {
         setValue(0);
     }
 

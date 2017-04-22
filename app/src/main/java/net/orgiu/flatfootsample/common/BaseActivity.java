@@ -6,10 +6,8 @@ import android.arch.lifecycle.LifecycleRegistryOwner;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
-import android.widget.Toolbar;
-
-import android.arch.lifecycle.LifecycleActivity;
 
 import net.orgiu.flatfootsample.R;
 
@@ -17,7 +15,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public abstract class BaseActivity extends AppCompatActivity implements LifecycleRegistryOwner{
+public abstract class BaseActivity extends AppCompatActivity implements LifecycleRegistryOwner {
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
@@ -36,8 +34,8 @@ public abstract class BaseActivity extends AppCompatActivity implements Lifecycl
     }
 
     private void setUpToolbar() {
-        setActionBar(toolbar);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public TextView counterView() {
