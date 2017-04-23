@@ -21,7 +21,7 @@ public abstract class BaseActivity extends AppCompatActivity implements Lifecycl
     Toolbar toolbar;
 
     @BindView(R.id.counter)
-    TextView counter;
+    public TextView counter;
 
     private final LifecycleRegistry registry = new LifecycleRegistry(this);
 

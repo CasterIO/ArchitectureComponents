@@ -16,27 +16,12 @@ import butterknife.OnClick;
 
 public class LiveDataActivity extends BaseActivity {
 
-    @BindView(R.id.toolbar)
-    Toolbar toolbar;
-
-    @BindView(R.id.counter)
-    TextView counter;
-
     CounterLiveData counterLD = new CounterLiveData();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_counter);
-        ButterKnife.bind(this);
-        setUpToolbar();
-
         subscribeToLiveData();
-    }
-
-    private void setUpToolbar() {
-        setActionBar(toolbar);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     private void subscribeToLiveData() {
