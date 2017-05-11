@@ -23,6 +23,13 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/advanced_livedata"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:onClick="onAdvancedLiveDataRequested"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/title_activity_view_model_live_data"
         style="@style/Widget.AppCompat.Button.Colored"
         android:onClick="onViewModelLiveDataRequested"/>

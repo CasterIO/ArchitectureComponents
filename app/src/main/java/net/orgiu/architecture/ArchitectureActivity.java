@@ -8,6 +8,7 @@ import android.view.View;
 import net.orgiu.architecture.lifecycle.LifecycleObservingActivity;
 import net.orgiu.architecture.livedata.LiveDataActivity;
 import net.orgiu.architecture.room.RoomActivity;
+import net.orgiu.architecture.transformations.TransformationActivity;
 import net.orgiu.architecture.viewmodel.ViewModelActivity;
 import net.orgiu.architecture.vm_livedata.ViewModelLiveDataActivity;
 
@@ -37,5 +38,9 @@ public class ArchitectureActivity extends AppCompatActivity {
 
     public void onRoomActivityRequested(View v) {
         startActivity(new Intent(this, RoomActivity.class));
+    }
+
+    public void onAdvancedLiveDataRequested(View v) {
+        startActivity(new Intent(this, TransformationActivity.class));
     }
 }
