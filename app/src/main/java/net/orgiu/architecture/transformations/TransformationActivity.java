@@ -42,7 +42,7 @@ public class TransformationActivity extends AppCompatActivity implements Lifecyc
         viewModel = ViewModelProviders.of(this).get(CalculationViewModel.class);
 
         Transformations.switchMap(viewModel.getCount(), liveData::fromInt)
-                .observe(this, s -> output.setText(s));
+                .observe(this, output::setText);
     }
 
     private void setupToolbar() {
