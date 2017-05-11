@@ -1,14 +1,10 @@
 package net.orgiu.architecture.transformations;
 
-import android.arch.core.util.Function;
 import android.arch.lifecycle.LifecycleRegistry;
 import android.arch.lifecycle.LifecycleRegistryOwner;
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.Transformations;
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.EditText;
@@ -45,17 +41,8 @@ public class TransformationActivity extends AppCompatActivity implements Lifecyc
 
         viewModel = ViewModelProviders.of(this).get(CalculationViewModel.class);
 
-        Transformations.switchMap(viewModel.getCount(), new Function<Integer, LiveData<String>>() {
-            @Override
-            public LiveData<String> apply(Integer integer) {
-                return liveData.fromInt(integer);
-            }
-        }).observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                output.setText(s);
-            }
-        });
+        Transformations.switchMap(viewModel.getCount(), liveData::fromInt)
+                .observe(this, s -> output.setText(s));
     }
 
     private void setupToolbar() {
