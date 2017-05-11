@@ -1,8 +1,8 @@
-package net.orgiu.flatfootsample.room.utils;
+package net.orgiu.architecture.room.utils;
 
 
-import net.orgiu.flatfootsample.room.AndroidDatabase;
-import net.orgiu.flatfootsample.room.AndroidVersion;
+import net.orgiu.architecture.room.AndroidDatabase;
+import net.orgiu.architecture.room.AndroidVersion;
 
 public class Dataset {
 

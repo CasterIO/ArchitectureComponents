@@ -1,4 +1,4 @@
-package net.orgiu.flatfootsample.lifecycle;
+package net.orgiu.architecture.lifecycle;
 
 
 import android.arch.lifecycle.Lifecycle;

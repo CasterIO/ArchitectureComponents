@@ -1,17 +1,13 @@
-package net.orgiu.flatfootsample.livedata;
+package net.orgiu.architecture.livedata;
 
 import android.arch.lifecycle.Observer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.widget.TextView;
-import android.widget.Toolbar;
 
-import net.orgiu.flatfootsample.R;
-import net.orgiu.flatfootsample.common.BaseActivity;
-import net.orgiu.flatfootsample.common.CounterLiveData;
+import net.orgiu.architecture.R;
+import net.orgiu.architecture.common.BaseActivity;
+import net.orgiu.architecture.common.CounterLiveData;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class LiveDataActivity extends BaseActivity {

@@ -1,10 +1,10 @@
-package net.orgiu.flatfootsample.viewmodel;
+package net.orgiu.architecture.viewmodel;
 
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 
-import net.orgiu.flatfootsample.R;
-import net.orgiu.flatfootsample.common.BaseActivity;
+import net.orgiu.architecture.R;
+import net.orgiu.architecture.common.BaseActivity;
 
 import butterknife.OnClick;
 

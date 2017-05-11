@@ -1,4 +1,4 @@
-package net.orgiu.flatfootsample.common;
+package net.orgiu.architecture.common;
 
 import android.arch.lifecycle.LiveData;
 

@@ -1,4 +1,4 @@
-package net.orgiu.flatfootsample.room;
+package net.orgiu.architecture.room;
 
 
 import android.arch.persistence.room.Entity;

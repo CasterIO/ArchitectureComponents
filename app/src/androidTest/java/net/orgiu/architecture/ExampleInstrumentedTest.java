@@ -1,4 +1,4 @@
-package net.orgiu.flatfootsample;
+package net.orgiu.architecture;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

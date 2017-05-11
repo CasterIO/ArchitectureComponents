@@ -1,4 +1,4 @@
-package net.orgiu.flatfootsample.viewmodel;
+package net.orgiu.architecture.viewmodel;
 
 import android.arch.lifecycle.ViewModel;
 

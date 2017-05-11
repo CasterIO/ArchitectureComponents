@@ -1,11 +1,11 @@
-package net.orgiu.flatfootsample.lifecycle;
+package net.orgiu.architecture.lifecycle;
 
 import android.os.Bundle;
 import android.widget.Toolbar;
 
 import android.arch.lifecycle.LifecycleActivity;
 
-import net.orgiu.flatfootsample.R;
+import net.orgiu.architecture.R;
 
 public class LifecycleObservingActivity extends LifecycleActivity {
 

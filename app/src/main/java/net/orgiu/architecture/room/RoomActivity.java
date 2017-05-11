@@ -1,14 +1,12 @@
-package net.orgiu.flatfootsample.room;
+package net.orgiu.architecture.room;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
-import android.arch.persistence.room.Database;
-
-import net.orgiu.flatfootsample.R;
-import net.orgiu.flatfootsample.room.utils.Dataset;
+import net.orgiu.architecture.R;
+import net.orgiu.architecture.room.utils.Dataset;
 
 import java.util.List;
 import java.util.Locale;

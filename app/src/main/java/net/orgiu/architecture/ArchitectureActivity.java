@@ -1,17 +1,17 @@
-package net.orgiu.flatfootsample;
+package net.orgiu.architecture;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import net.orgiu.flatfootsample.lifecycle.LifecycleObservingActivity;
-import net.orgiu.flatfootsample.livedata.LiveDataActivity;
-import net.orgiu.flatfootsample.room.RoomActivity;
-import net.orgiu.flatfootsample.viewmodel.ViewModelActivity;
-import net.orgiu.flatfootsample.vm_livedata.ViewModelLiveDataActivity;
+import net.orgiu.architecture.lifecycle.LifecycleObservingActivity;
+import net.orgiu.architecture.livedata.LiveDataActivity;
+import net.orgiu.architecture.room.RoomActivity;
+import net.orgiu.architecture.viewmodel.ViewModelActivity;
+import net.orgiu.architecture.vm_livedata.ViewModelLiveDataActivity;
 
-public class FlatFootActivity extends AppCompatActivity {
+public class ArchitectureActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

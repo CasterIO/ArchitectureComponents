@@ -1,4 +1,4 @@
-package net.orgiu.flatfootsample.common;
+package net.orgiu.architecture.common;
 
 
 import android.arch.lifecycle.LifecycleRegistry;
@@ -9,7 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
-import net.orgiu.flatfootsample.R;
+import net.orgiu.architecture.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

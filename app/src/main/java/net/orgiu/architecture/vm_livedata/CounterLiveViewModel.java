@@ -1,9 +1,9 @@
-package net.orgiu.flatfootsample.vm_livedata;
+package net.orgiu.architecture.vm_livedata;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.ViewModel;
 
-import net.orgiu.flatfootsample.common.CounterLiveData;
+import net.orgiu.architecture.common.CounterLiveData;
 
 
 public class CounterLiveViewModel extends ViewModel {

@@ -1,4 +1,4 @@
-package net.orgiu.flatfootsample;
+package net.orgiu.architecture;
 
 import org.junit.Test;
 

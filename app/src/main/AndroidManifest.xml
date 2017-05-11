@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="net.orgiu.flatfootsample">
+    package="net.orgiu.architecture">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FlatFootActivity">
+        <activity android:name="net.orgiu.architecture.ArchitectureActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,49 +17,49 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".viewmodel.ViewModelActivity"
+            android:name="net.orgiu.architecture.viewmodel.ViewModelActivity"
             android:label="@string/title_activity_view_model"
-            android:parentActivityName=".FlatFootActivity"
+            android:parentActivityName="net.orgiu.architecture.ArchitectureActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="net.orgiu.flatfootsample.FlatFootActivity" />
+                android:value="net.orgiu.architecture.ArchitectureActivity" />
         </activity>
         <activity
-            android:name=".livedata.LiveDataActivity"
+            android:name="net.orgiu.architecture.livedata.LiveDataActivity"
             android:label="@string/title_activity_live_data"
-            android:parentActivityName=".FlatFootActivity"
+            android:parentActivityName="net.orgiu.architecture.ArchitectureActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="net.orgiu.flatfootsample.FlatFootActivity" />
+                android:value="net.orgiu.architecture.ArchitectureActivity" />
         </activity>
         <activity
-            android:name=".vm_livedata.ViewModelLiveDataActivity"
+            android:name="net.orgiu.architecture.vm_livedata.ViewModelLiveDataActivity"
             android:label="@string/title_activity_view_model_live_data"
-            android:parentActivityName=".FlatFootActivity"
+            android:parentActivityName="net.orgiu.architecture.ArchitectureActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="net.orgiu.flatfootsample.FlatFootActivity" />
+                android:value="net.orgiu.architecture.ArchitectureActivity" />
         </activity>
         <activity
-            android:name=".lifecycle.LifecycleObservingActivity"
+            android:name="net.orgiu.architecture.lifecycle.LifecycleObservingActivity"
             android:label="@string/title_activity_lifecycle_observing"
-            android:parentActivityName=".FlatFootActivity"
+            android:parentActivityName="net.orgiu.architecture.ArchitectureActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="net.orgiu.flatfootsample.FlatFootActivity" />
+                android:value="net.orgiu.architecture.ArchitectureActivity" />
         </activity>
         <activity
-            android:name=".room.RoomActivity"
+            android:name="net.orgiu.architecture.room.RoomActivity"
             android:label="@string/title_activity_room"
-            android:parentActivityName=".FlatFootActivity"
+            android:parentActivityName="net.orgiu.architecture.ArchitectureActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="net.orgiu.flatfootsample.FlatFootActivity" />
+                android:value="net.orgiu.architecture.ArchitectureActivity" />
         </activity>
     </application>
 

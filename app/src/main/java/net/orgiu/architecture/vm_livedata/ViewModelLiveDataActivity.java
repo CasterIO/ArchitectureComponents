@@ -1,11 +1,11 @@
-package net.orgiu.flatfootsample.vm_livedata;
+package net.orgiu.architecture.vm_livedata;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import net.orgiu.flatfootsample.common.BaseActivity;
+import net.orgiu.architecture.common.BaseActivity;
 
 public class ViewModelLiveDataActivity extends BaseActivity {
 
